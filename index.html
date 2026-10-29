@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ফি আমানিল্লাহ এগ্রো ফার্ম</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f8f2;color:#243329}
+header{background:#12452c;color:white;padding:28px 14px;text-align:center}
+header h1{font-size:27px;margin:10px 0}
+header p{line-height:1.7}
+nav{background:#0b3521;padding:14px 5px;text-align:center}
+nav a{color:white;text-decoration:none;margin:0 8px;font-size:14px}
+.hero{padding:40px 16px;text-align:center;background:linear-gradient(140deg,#dcefd8,#fff7dc)}
+.hero h2{color:#175532;font-size:27px}
+.hero p{line-height:1.9}
+.btn{display:inline-block;background:#187544;color:white;padding:12px 18px;border:0;border-radius:8px;text-decoration:none;font-size:15px;cursor:pointer}
+section{padding:28px 14px;max-width:1000px;margin:auto}
+.title{text-align:center;color:#175532}
+.sub{text-align:center;color:#667568;line-height:1.7}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:14px}
+.card{background:white;border:1px solid #e4ecdf;border-radius:14px;padding:16px 12px;text-align:center;box-shadow:0 3px 12px #183b1710}
+.pic{font-size:48px;background:#edf5e9;padding:14px;border-radius:12px}
+.card h3{color:#174b2d}
+.card p{font-size:14px;line-height:1.8;color:#627064}
+.card button{width:100%}
+form,.info{background:white;padding:20px;border-radius:14px;box-shadow:0 3px 14px #183b1710}
+label{display:block;margin:14px 0 6px;font-weight:bold}
+input,select,textarea{width:100%;padding:12px;border:1px solid #ccd8ca;border-radius:7px;font-size:16px;background:white}
+textarea{min-height:80px}
+form button{width:100%;margin-top:18px}
+.info{text-align:center;line-height:2;background:#e6f2e3}
+footer{background:#103b27;color:white;text-align:center;padding:25px 14px;line-height:1.8}
+.small{font-size:13px;color:#d8e8dc}
+</style>
+</head>
+<body>
+
+<header>
+<div style="font-size:45px">🐓 🌿</div>
+<h1>ফি আমানিল্লাহ এগ্রো ফার্ম</h1>
+<p>বিশ্বস্ততার সঙ্গে উন্নত জাতের মুরগি বিক্রি ও বিজ ডিম ক্রয়</p>
+</header>
+
+<nav>
+<a href="#home">হোম</a>
+<a href="#products">মুরগি</a>
+<a href="#eggs">ডিম ক্রয়</a>
+<a href="#contact">যোগাযোগ</a>
+</nav>
+
+<div class="hero" id="home">
+<h2>স্বাগতম ফি আমানিল্লাহ এগ্রো ফার্মে</h2>
+<p>টাইগার মুরগি, ফাওমি মুরগি ও মিশরীয় মুরগি পাওয়া যায়।<br>
+পাশাপাশি আমরা বিজ ডিম ক্রয় করি।</p>
+<a class="btn" href="#products">মুরগি দেখুন</a>
+</div>
+
+<section id="products">
+<h2 class="title">🐓 আমাদের মুরগি</h2>
+<p class="sub">দাম, মজুত ও অর্ডারের জন্য যোগাযোগ করুন।</p>
+
+<div class="products">
+<div class="card">
+<div class="pic">🐓</div>
+<h3>টাইগার মুরগি</h3>
+<p>দাম ও প্রাপ্যতা জানতে অর্ডার করুন।</p>
+<button class="btn" onclick="choose('টাইগার মুরগি')">অর্ডার করুন</button>
+</div>
+
+<div class="card">
+<div class="pic">🐔</div>
+<h3>ফাওমি মুরগি</h3>
+<p>দাম ও প্রাপ্যতা জানতে অর্ডার করুন।</p>
+<button class="btn" onclick="choose('ফাওমি মুরগি')">অর্ডার করুন</button>
+</div>
+
+<div class="card">
+<div class="pic">🐓</div>
+<h3>মিশরীয় মুরগি</h3>
+<p>দাম ও প্রাপ্যতা জানতে অর্ডার করুন।</p>
+<button class="btn" onclick="choose('মিশরীয় মুরগি')">অর্ডার করুন</button>
+</div>
+</div>
+</section>
+
+<section id="eggs">
+<h2 class="title">🥚 বিজ ডিম ক্রয় করা হয়</h2>
+<p class="sub">আপনার কাছে বিজ ডিম থাকলে বিক্রির প্রস্তাব পাঠান। ডিমের ধরন ও পরিমাণ জানিয়ে যোগাযোগ করুন।</p>
+<div class="info">
+<strong>আপনি কি বিজ ডিম বিক্রি করতে চান?</strong>
+<p>আপনার নাম, মোবাইল নম্বর ও ডিমের পরিমাণ দিয়ে নিচের ফর্ম পূরণ করুন।</p>
+<button class="btn" onclick="choose('বিজ ডিম বিক্রির প্রস্তাব')">ডিম বিক্রির প্রস্তাব দিন</button>
+</div>
+</section>
+
+<section id="order">
+<h2 class="title">📋 অর্ডার ও যোগাযোগ ফর্ম</h2>
+<p class="sub">আপনার তথ্য পূরণ করে অনুরোধ তৈরি করুন।</p>
+
+<form id="orderForm">
+<label for="name">আপনার নাম *</label>
+<input id="name" required placeholder="আপনার নাম">
+
+<label for="phone">মোবাইল নম্বর *</label>
+<input id="phone" type="tel" required placeholder="আপনার মোবাইল নম্বর">
+
+<label for="purpose">আপনার অনুরোধ *</label>
+<select id="purpose" required>
+<option value="">নির্বাচন করুন</option>
+<option>টাইগার মুরগি অর্ডার</option>
+<option>ফাওমি মুরগি অর্ডার</option>
+<option>মিশরীয় মুরগি অর্ডার</option>
+<option>বিজ ডিম বিক্রির প্রস্তাব</option>
+</select>
+
+<label for="quantity">পরিমাণ</label>
+<input id="quantity" placeholder="যেমন: ১০টি মুরগি বা ২০০টি ডিম">
+
+<label for="address">ঠিকানা *</label>
+<textarea id="address" required placeholder="আপনার ঠিকানা"></textarea>
+
+<label for="details">অতিরিক্ত তথ্য</label>
+<textarea id="details" placeholder="ডিমের ধরন, মুরগির বয়স বা অন্য তথ্য"></textarea>
+
+<button class="btn" type="submit">অনুরোধ তৈরি করুন</button>
+<p id="result" aria-live="polite"></p>
+</form>
+</section>
+
+<section id="contact">
+<h2 class="title">📞 যোগাযোগ</h2>
+<div class="info">
+<strong>ফি আমানিল্লাহ এগ্রো ফার্ম</strong><br>
+মুরগি অর্ডার ও বিজ ডিম বিক্রির প্রস্তাবের জন্য যোগাযোগ করুন।<br>
+📱 মোবাইল: শিগগিরই যুক্ত করা হবে<br>
+📍 ঠিকানা: শিগগিরই যুক্ত করা হবে
+</div>
+</section>
+
+<footer>
+<strong>ফি আমানিল্লাহ এগ্রো ফার্ম 🐓</strong>
+<p>বিশ্বস্ততা ও মানসম্মত সেবাই আমাদের অঙ্গীকার।</p>
+<div class="small">© 2026 Fi Amanillah Agro Farm</div>
+</footer>
+
+<script>
+function choose(item){
+const select=document.getElementById('purpose');
+const options=[...select.options];
+const match=options.find(o=>o.text.includes(item));
+if(match)select.value=match.value;
+document.getElementById('order').scrollIntoView({behavior:'smooth'});
+}
+
+document.getElementById('orderForm').addEventListener('submit',function(e){
+e.preventDefault();
+const data=[
+'ফি আমানিল্লাহ এগ্রো ফার্ম',
+'নাম: '+document.getElementById('name').value,
+'মোবাইল: '+document.getElementById('phone').value,
+'অনুরোধ: '+document.getElementById('purpose').value,
+'পরিমাণ: '+(document.getElementById('quantity').value||'উল্লেখ নেই'),
+'ঠিকানা: '+document.getElementById('address').value,
+'অতিরিক্ত তথ্য: '+(document.getElementById('details').value||'নেই')
+].join('\n');
+
+document.getElementById('result').textContent=
+'অনুরোধ তৈরি হয়েছে। নিচের বোতাম চাপ দিয়ে তথ্য কপি করুন।';
+
+let old=document.getElementById('copyOrder');
+if(old)old.remove();
+
+const b=document.createElement('button');
+b.id='copyOrder';
+b.type='button';
+b.className='btn';
+b.textContent='তথ্য কপি করুন';
+b.onclick=async()=>{
+try{
+await navigator.clipboard.writeText(data);
+b.textContent='কপি হয়েছে!';
+}catch(err){
+window.prompt('এই তথ্য কপি করুন:',data);
+}
+};
+document.getElementById('result').after(b);
+});
+</script>
+
+</body>
+</html>
